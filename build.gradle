@@ -19,6 +19,9 @@ repositories {
 	mavenCentral()
 }
 
+//Spring Boot Overriding
+ext['hibernate.version'] = '5.2.11.Final' // add
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -32,4 +35,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+	// add
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0' 
+    
 }
