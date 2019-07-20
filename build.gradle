@@ -37,5 +37,4 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	// add
     compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0' 
-    
 }

@@ -14,8 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.pes9.domain.posts.Posts;
-import com.pes9.domain.posts.PostsRepository;
+import com.pes.entity.posts.Posts;
+import com.pes.repository.posts.PostsRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -27,8 +27,8 @@ public class PostsRepositoryTest {
     @After
     public void cleanup() {
         /** 
-        ÀÌÈÄ Å×½ºÆ® ÄÚµå¿¡ ¿µÇâÀ» ³¢Ä¡Áö ¾Ê±â À§ÇØ 
-        Å×½ºÆ® ¸Þ¼Òµå°¡ ³¡³¯¶§ ¸¶´Ù respository ÀüÃ¼ ºñ¿ì´Â ÄÚµå
+        ï¿½ï¿½ï¿½ï¿½ ï¿½×½ï¿½Æ® ï¿½Úµå¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+        ï¿½×½ï¿½Æ® ï¿½Þ¼Òµå°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ respository ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½
         **/
         postsRepository.deleteAll();
     }
@@ -37,8 +37,8 @@ public class PostsRepositoryTest {
     public void load() {
         //given
     	Posts posts = new Posts(
-  			  "Å×½ºÆ® °Ô½Ã±Û"
-  			, "Å×½ºÆ® º»¹®"
+  			  "ï¿½×½ï¿½Æ® ï¿½Ô½Ã±ï¿½"
+  			, "ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½"
   			, "jojoldu@gmail.com"
   			);
         
@@ -49,8 +49,8 @@ public class PostsRepositoryTest {
 
         //then
         Posts post = postsList.get(0);
-        assertThat(post.getTitle(), is("Å×½ºÆ® °Ô½Ã±Û"));
-        assertThat(post.getContent(), is("Å×½ºÆ® º»¹®"));
+        assertThat(post.getTitle(), is("ï¿½×½ï¿½Æ® ï¿½Ô½Ã±ï¿½"));
+        assertThat(post.getContent(), is("ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½"));
     }
     
     @Test
@@ -58,8 +58,8 @@ public class PostsRepositoryTest {
         //given
         LocalDateTime now = LocalDateTime.now();
     	Posts posts = new Posts(
-    			  "Å×½ºÆ® °Ô½Ã±Û"
-    			, "Å×½ºÆ® º»¹®"
+    			  "ï¿½×½ï¿½Æ® ï¿½Ô½Ã±ï¿½"
+    			, "ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½"
     			, "jojoldu@gmail.com"
     			);
         postsRepository.save(posts);
