@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>메인</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- add css -->
+  <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="/css//common.css">
+  
+</head>
+<body>
+  <div id="header"></div>
+  <div id="content">
+    <div id="data_panel"> 
+      <div id="data_header" class="col-md-12">
+        <div class="data_title"><strong>#TECH</strong></div>
+        <table class="table table-striped">
+          <thead class="thead-strong">
+            <tr>
+              <th>#Logo</th>
+              <th>Tech_Desc</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+              <tr id="table_tr_0">
+                <td class="logo_td">
+                  <img src="/img/tech/aws.jpg" class="img-rounded">
+                </td>
+                <td class="desc_td">Amazon Web Service</td>
+              </tr>
+            {{#each tech_list}}
+              <tr id="table_tr_{{id}}">
+                <td class="logo_td">
+                  <img src="/img/tech/{{img_src}}" class="img-rounded">
+                </td>
+                <td class="desc_td">{{tech_desc}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <!-- add js, jquery lib -->
+  <script src="/js/lib/jquery.min.js"></script>
+  <script src="/js/lib/bootstrap.min.js"></script>
+
+  <!--add custom js -->
+  <script src="/js/app/news.js"></script>
+</body>
+</html>

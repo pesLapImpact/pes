@@ -1,31 +1,8 @@
 var main = {
     init : function () {
-        var _this = this;
-        $('#btn-save').on('click', function () {
-            _this.save();
-        });
-    },
-    save : function () {
-        var data = {
-            title: $('#title').val(),
-            author: $('#author').val(),
-            content: $('#content').val()
-        };
-        
-        $.ajax({
-            type: 'POST',
-            url: '/posts',
-            dataType: 'json',
-            contentType:'application/json; charset=utf-8',
-            data: JSON.stringify(data)
-        }).done(function() {
-            alert('registration is successed.');
-            location.reload();
-        }).fail(function (error) {
-        	alert('registration is failed.');
-        });
+    	$("#header").load("/html/header.html");
+    	$("#footer").load("/html/footer.html");
     }
-
 };
 
 main.init();

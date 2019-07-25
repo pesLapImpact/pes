@@ -1,6 +1,5 @@
 package com.pes.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,41 +13,17 @@ public class Member extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-	@Column(length = 500, nullable = false)
     private int team_id;
-	
-	@Column(length = 500, nullable = false)
     private String name;
-	
-	@Column(length = 500, nullable = false)
     private int won;
-	
-	@Column(length = 500, nullable = false)
     private int draw;
-	
-	@Column(length = 500, nullable = false)
     private int lost;
-	
-	@Column(length = 500, nullable = false)
     private int rating;
-	
-	@Column(length = 500, nullable = false)
     private int winning_point;
-	
-	@Column(length = 500, nullable = false)
     private int winning_rate;
-	
-	@Column(length = 500, nullable = false)
     private int goal;
-	
-	@Column(length = 500, nullable = false)
     private int goal_average;
-
-	@Column(length = 500, nullable = false)
     private int lost_goal;
-	
-	@Column(length = 500, nullable = false)
     private int lost_goal_average;
 
 	public Long getId() {

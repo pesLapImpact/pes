@@ -1,0 +1,14 @@
+insert into tech (img_src, img_desc, created_date, modified_date) values ('aws.jpg',        'Amazon Web Service', now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('css.png',        'CSS',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('git.png',        'GIT',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('gradle.png',     'GRADLE',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('handlebar.png',  'HANDLEBAR',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('html5.png',      'HTML5',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('java8.png',      'JAVA8',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('jquery.jpg',     'JQUERY',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('mysql.png',      'My Sql',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('sourcetree.png', 'Sourcetree',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('springboot.png', 'Spring Boot',now(), now());
+insert into tech (img_src, img_desc, created_date, modified_date) values ('tomcat.jpg',     'Tomcat',now(), now());
+insert into news (news_title, created_date, modified_date) values ('news1', now(), now());
+insert into news (news_title, created_date, modified_date) values ('news2', now(), now());

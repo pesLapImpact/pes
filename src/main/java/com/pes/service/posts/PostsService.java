@@ -6,12 +6,13 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pes.dto.posts.PostsMainResponseDto;
+import com.pes.dto.posts.PostsResponseDto;
 import com.pes.dto.posts.PostsSaveRequestDto;
 import com.pes.repository.posts.PostsRepository;
 
 @Service
 public class PostsService {
+	
     private PostsRepository postsRepository;
 
     public PostsService(PostsRepository postsRepository) {
@@ -24,9 +25,9 @@ public class PostsService {
     }
     
     @Transactional(readOnly = true)
-    public List<PostsMainResponseDto> findAllDesc() {
+    public List<PostsResponseDto> findAllDesc() {
         return postsRepository.findAllDesc()
-                .map(PostsMainResponseDto::new)
+                .map(PostsResponseDto::new)
                 .collect(Collectors.toList());
     }
     

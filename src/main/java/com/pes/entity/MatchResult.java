@@ -1,6 +1,5 @@
 package com.pes.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,29 +13,13 @@ public class MatchResult extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-	@Column(length = 500, nullable = false)
     private int home_id;
-	
-	@Column(length = 500, nullable = false)
     private int home_goal;
-	
-	@Column(length = 500, nullable = true)
     private int home_possesion;
-	
-	@Column(length = 500, nullable = true)
     private int home_added_rating;
-	
-	@Column(length = 500, nullable = false)
     private int away_id;
-	
-	@Column(length = 500, nullable = false)
     private int away_goal;
-	
-	@Column(length = 500, nullable = true)
     private int away_possesion;
-	
-	@Column(length = 500, nullable = true)
 	private int away_added_rating;
 
 	public Long getId() {
@@ -79,7 +62,7 @@ public class MatchResult extends BaseTimeEntity {
 	protected MatchResult() {};
 	
 	protected MatchResult(
-			int home_id
+		      int home_id
 			, int home_goal
 			, int home_possesion
 			, int home_added_rating

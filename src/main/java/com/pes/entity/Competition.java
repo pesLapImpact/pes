@@ -1,6 +1,5 @@
 package com.pes.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,32 +13,43 @@ public class Competition extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-	@Column(length = 500, nullable = false)
-    private int weight;
-	
-	@Column(length = 500, nullable = false)
+	private int weight;
     private String name;
-	
-	@Column(length = 500, nullable = true)
     private int participant_count;
-	
-	@Column(length = 500, nullable = true)
-    private int from;
-	
-	@Column(length = 500, nullable = true)
-    private int to;
+    private int start;
+    private int end;
 
     public Long getId() {
 		return id;
 	}
 	
+    public int getWeight() {
+		return weight;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getParticipantCount() {
+		return participant_count;
+	}
+
+	public int getStart() {
+		return start;
+	}
+
+	public int getEnd() {
+		return end;
+	}
+    
 	protected Competition() {};
     
-    public Competition(int won, int draw, int lost, int rating, int winning_point, int winning_rate) {
+    public Competition(int weight, String name, int participant_count, int from, int to) {
+    	this.weight = weight;
+    	this.name = name;
+    	this.participant_count = participant_count;
+    	this.start = from;
+    	this.end = to;
     }
-
-
-    
-    
 }
