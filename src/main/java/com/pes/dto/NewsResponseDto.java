@@ -16,7 +16,7 @@ public class NewsResponseDto {
 		return id;
 	}
 
-	public String getNewsTitle() {
+	public String getNews_title() {
 		return news_title;
 	}
 
@@ -26,12 +26,12 @@ public class NewsResponseDto {
 
 	public NewsResponseDto(News entity) {
         id = entity.getId();
-        news_title = entity.getNewsTitle();
+        news_title = entity.getNews_title();
         date = toStringDateTime(entity.getModifiedDate());
     }
 
     private String toStringDateTime(LocalDateTime localDateTime){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         return Optional.ofNullable(localDateTime)
                 .map(formatter::format)
                 .orElse("");

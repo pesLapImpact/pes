@@ -6,8 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.pes.entity.BaseTimeEntity;
-
 @Entity
 public class Tech extends BaseTimeEntity {
 
@@ -17,23 +15,39 @@ public class Tech extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String img_src;
     @Column(columnDefinition = "TEXT", nullable = false)
-    private String img_desc;
+    private String tech_desc;
+    @Column(columnDefinition = "TEXT", nullable = false)
+    private String level;
+    @Column(columnDefinition = "TEXT", nullable = false)
+    private String skill;    
 	
-    protected Tech() {};
+	protected Tech() {};
     
-    public Tech(String imgSrc, String imgDesc) {
-    	this.img_src  = imgSrc;
-    	this.img_desc = imgDesc;
+    public Tech(String img_src, String tech_desc, String level, String skill) {
+    	this.img_src   = img_src;
+    	this.tech_desc = tech_desc;
+    	this.level     = level;
+    	this.skill     = skill;
     }
-    
+
     public Long getId() {
 		return id;
 	}
-	public String getImgSrc() {
+
+	public String getImg_src() {
 		return img_src;
 	}
-	public String getImgDesc() {
-		return img_desc;
+
+	public String getTech_desc() {
+		return tech_desc;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public String getSkill() {
+		return skill;
 	}
 	
 }

@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead class="thead-strong">
+    <tr>
+      <th>No</th>
+        <th>News Title</th>
+        <th>Date</th>
+      </tr>
+  </thead>
+  <tbody id="tbody">
+  {{#each news_list}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{news_title}}</td>
+      <td>{{date}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+.shadow {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+
+

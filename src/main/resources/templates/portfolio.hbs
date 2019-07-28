@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>메인</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- add css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css//common.css">
+  
+</head>
+<body>
+  <div id="header"></div>
+  <div id="content">
+    <div id="data_panel"> 
+      <div id="data_header" class="col-md-12">
+        <h2>#Skills</h2>
+      </div>
+      <div id="data_content" class="col-md-12">
+        <div class="logo_container">
+          <h2>Languages</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+        <div class="logo_container">
+          <h2>Web Skills</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+        <div class="logo_container">
+          <h2>Framework</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+        <div class="logo_container">
+          <h2>DataBase</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+        <div class="logo_container">
+          <h2>Operating System</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+        <div class="logo_container">
+          <h2>Etc</h2>
+          {{#each tech_list}}
+            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
+          {{/each}}
+        </div>
+      </div>
+      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <!-- add js, jquery lib -->
+  <script src="/js/lib/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!--add custom js -->
+  <script src="/js/app/news.js"></script>
+</body>
+</html>

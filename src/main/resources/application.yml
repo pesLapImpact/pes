@@ -7,7 +7,9 @@ spring:
 spring:
   profiles: local
   datasource:
-    data: classpath:default_data-h2.sql
+    data: 
+      classpath:tech_data-h2.sql
+      , classpath:news_data-h2.sql
   jpa:
     show-sql: true
     hibernate:

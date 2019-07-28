@@ -37,6 +37,8 @@ public class MainServiceTest {
     	Tech tech = new Tech(
   			   "aws.png"
     	      ,"Amazon Web Service"
+    	      ,"level"
+    	      ,"skill"
   			);
         
         TechRepository.save(tech);
@@ -46,7 +48,7 @@ public class MainServiceTest {
 
         //then
         TechResponseDto dto = dtoList.get(0);
-        assertThat(dto.getImgSrc(), is("aws_logo.png"));
+        assertThat(dto.getImg_src(), is("aws_logo.png"));
     }
     
 }

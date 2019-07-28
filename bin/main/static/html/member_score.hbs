@@ -1,0 +1,28 @@
+<table class="table table-horizontal table-bordered">
+  <thead class="thead-strong">
+    <tr>
+      <th>Name</th>
+      <th>Team</th>
+      <th>Score</th>
+      <th>vs</th>
+      <th>Score</th>
+      <th>Name</th>
+      <th>Team</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+  {{#each member_list}}
+    <tr>
+      <td>{{home_name}}</td>
+      <td>{{home_team}}</td>
+      <td>{{home_score}}</td>
+      <td>vs</td>
+      <td>{{away_scroe}}</td>
+      <td>{{away_name}}</td>
+      <td>{{away_team}}</td>
+      <td>{{date}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

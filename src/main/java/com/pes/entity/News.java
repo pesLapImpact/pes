@@ -20,13 +20,13 @@ public class News extends BaseTimeEntity {
 		return id;
 	}
 	
-	public String getNewsTitle() {
+	public String getNews_title() {
 		return news_title;
 	}
 
 	protected News() {};
     
-    public News(String newsTitle) {
-        this.news_title = newsTitle;
+    public News(String news_title) {
+        this.news_title = news_title;
     }
 }

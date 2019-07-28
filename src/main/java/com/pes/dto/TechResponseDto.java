@@ -4,19 +4,34 @@ import com.pes.entity.Tech;
 
 public class TechResponseDto {
 
+	private Long   id;
     private String img_src;
-    private String img_desc;
+    private String tech_desc;
+    private String level;
+    private String skill;
 
-	public String getImgSrc() {
+	public Long getId() {
+		return id;
+	}
+	public String getImg_src() {
 		return img_src;
 	}
-	public String getImgDesc() {
-		return img_desc;
+	public String getTech_desc() {
+		return tech_desc;
+	}
+	public String getLevel() {
+		return level;
+	}
+	public String getSkill() {
+		return skill;
 	}
 
 	public TechResponseDto(Tech entity) {
-        img_src = entity.getImgSrc();
-        img_desc = entity.getImgDesc();
+		id        = entity.getId();
+        img_src   = entity.getImg_src();
+        tech_desc = entity.getTech_desc();
+        level     = entity.getLevel();
+        skill     = entity.getSkill();
     }
 	
 }
