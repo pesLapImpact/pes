@@ -10,36 +10,35 @@
   <link rel="stylesheet" href="/css//common.css">
   <link rel="stylesheet" href="/css//peslapimpact.css">
   <link rel="stylesheet" href="/css//header.css">
+  <link rel="stylesheet" href="/css//footer.css">
+  
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/news/clean-blog.min.css" rel="stylesheet">
+  
 </head>
 <body>
   <div id="header"></div>
-  <div id="content">
+  <div id="main_content">
     <div id="data_panel"> 
-      <div id="data_header" class="col-md-12 data_title"><strong>#PES LAP IMAPACT </strong>MAIN PAGE</div>
+      <div id="data_header" class="col-md-12 data_title"><strong>#PES LAP IMAPACT </strong>Fan Page 2020</div>
       <div id="data_content" class="col-md-12">
-        <div id="news_content shadow" class="col-xl-3 col-md-6 mb-4">
-          <div><strong>#News</strong> Top5</div>
+        <div id="news_content shadow">
+          <div class="content_title"><strong>#News</strong> Top5</div>
           <table class="table table-striped">
-            <thead class="thead-strong">
-              <tr>
-                <th>No</th>
-                  <th>News Title</th>
-                  <th>Date</th>
-                </tr>
-            </thead>
-            <tbody id="tbody">
             {{#each news_list}}
               <tr>
-                <td>{{id}}</td>
-                <td>{{news_title}}</td>
-                <td>{{date}}</td>
+                <td><span class="td_news_title">{{news_title}}</span> <p class="post-meta td_news_post">Posted by {{author}} on {{date}} </p></td>
               </tr>
             {{/each}}
-            </tbody>
           </table>        
         </div>
         <div id="member_ranking_content" class="col-xl-3 col-md-6 mb-4">
-          <div><strong>#Member Ranking</strong> Top5</div>
+          <div class="content_title"><strong>#Member Ranking</strong> Top5</div>
           <table class="table table-striped">
             <thead class="thead-strong">
               <tr>
@@ -60,7 +59,7 @@
           </table>        
         </div>
         <div id="team_ranking_content" class="col-xl-3 col-md-6 mb-4">
-          <div><strong>#Team Ranking</strong> Top5</div>
+          <div class="content_title"><strong>#Team Ranking</strong> Top5</div>
           <table class="table table-striped">
             <thead class="thead-strong">
               <tr>
@@ -81,7 +80,7 @@
           </table>        
         </div>
         <div id="member_score_content" class="col-xl-3 col-md-6 mb-4">
-          <div><strong>#Member Score</strong> Top5</div>
+          <div class="content_title"><strong>#Member Score</strong> Top5</div>
           <table class="table table-striped">
             <thead class="thead-strong">
               <tr>
@@ -102,7 +101,7 @@
           </table>        
         </div>
         <div id="team_score_content" class="col-xl-3 col-md-6 mb-4">
-          <div><strong>#Team Score</strong> Top5</div>
+          <div class="content_title"><strong>#Team Score</strong> Top5</div>
           <table class="table table-striped">
             <thead class="thead-strong">
               <tr>
@@ -127,12 +126,17 @@
     </div>
   </div>
   <div id="footer"></div>
+  
   <!-- add js, jquery lib -->
   <script src="/js/lib/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!--add custom js -->
   <script src="/js/app/common.js"></script>
   <script src="/js/app/peslapimpact.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/news/clean-blog.min.js"></script>
+  
 </body>
 </html>

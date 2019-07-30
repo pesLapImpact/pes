@@ -1,0 +1,4 @@
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color:rgb(117,117,117);
+    color: white;
+}

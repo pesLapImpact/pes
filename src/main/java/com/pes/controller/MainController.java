@@ -24,9 +24,15 @@ public class MainController {
     }
     
     @GetMapping("/peslapimpact")
+    public String peslapimpact(Model model) {
+        model.addAttribute("news_list", newsService.findAll());
+        return "/peslapimpact/peslapimpact";
+    }
+
+    @GetMapping("/news")
     public String news(Model model) {
         model.addAttribute("news_list", newsService.findAll());
-        return "peslapimpact";
+        return "/news/news_list";
     }
     
     @GetMapping("/portfolio")
