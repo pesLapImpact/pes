@@ -29,39 +29,19 @@
       <div id="data_content" class="col-md-12">
         <div class="profile_container">        
           <div class="row">
+            {{#each main_menu_list}}
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
-                <a href="./peslapimpact">
-                  <img src="/img/main/pes.jpg" alt="pes" class="img-rounded">
+                <a href="./{{link}}">
+                  <img src="/img/main/{{img}}" alt="pes" class="img-rounded">
                 </>
                 <div class="caption">
-                  <h3>Winning Eleven Fan Page</h3>
-                  <p>Check the Your Winning Eleven Rating</p>
+                  <h3>{{main_caption}}</h3>
+                  <p>{{sub_caption}}</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="./portfolio">
-                  <img src="/img/main/portfolio.jpg" alt="portfolio" class="img-rounded">
-                </a>
-                <div class="caption">
-                  <h3>Lap Impact Portfolio</h3>
-                  <p>...</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="./lapimpact">
-                  <img src="/img/main/lapimpact.jpg" alt="lapimpact" class="img-rounded">
-                </a> 
-                <div class="caption">
-                  <h3>Lap Impact Routine</h3>
-                  <p>Show you Lap Impact Routine</p>
-                </div>
-              </div>
-            </div>
+            {{/each}}
           </div>
         </div>
       </div>

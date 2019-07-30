@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Main Page</title>
+  <title>PES Lap Impact Fan Page</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- add css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css//common.css">
-  <link rel="stylesheet" href="/css//main.css">
-  <link rel="stylesheet" href="/css//header_main.css">
+  <link rel="stylesheet" href="/css//header.css">
   <link rel="stylesheet" href="/css//footer.css">
+  <link rel="stylesheet" href="/css//member_ranking.css">
   
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,31 +25,41 @@
   <div id="header"></div>
   <div id="main_content">
     <div id="data_panel"> 
-      <div id="data_header" class="col-md-12"><strong>#Meet</strong> the Menu</div>
+      <div id="data_header" class="col-md-12 data_title"><strong>#PES LAP IMAPACT </strong>Fan Page 2020</div>
       <div id="data_content" class="col-md-12">
-        <div class="profile_container">        
-          <div class="row">
-            {{#each main_menu_list}}
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="./{{link}}">
-                  <img src="/img/main/{{img}}" alt="pes" class="img-rounded">
-                </>
-                <div class="caption">
-                  <h3>{{main_caption}}</h3>
-                  <p>{{sub_caption}}</p>
-                </div>
-              </div>
-            </div>
+        <div id="member_ranking_content">
+          <div class="content_title"><strong>#Member Ranking</strong> List</div>
+          <table class="table table-striped">
+            <thead class="thead-strong">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Win</th>
+                <th>Draw</th>
+                <th>Lose</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            {{#each member_ranking_list}}
+              <tr>
+                <td>{{ranking}}</td>
+                <td>{{name}}</td>
+                <td>{{rating}}</td>
+                <td>{{win}}</td>
+                <td>{{draw}}</td>
+                <td>{{lose}}</td>
+              </tr>
             {{/each}}
-          </div>
+            </tbody>
+          </table>        
         </div>
       </div>
-      <div id="data_footer" class="data_title"><strong>LAP</strong> IMPACT BOARD</div>
+      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
     </div>
   </div>
   <div id="footer"></div>
-
+  
   <!-- add js, jquery lib -->
   <script src="/js/lib/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -57,9 +67,9 @@
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!--add custom js -->
   <script src="/js/app/common.js"></script>
-  <script src="/js/app/main.js"></script>
+  <script src="/js/app/ranking.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/news/clean-blog.min.js"></script>
-
+  
 </body>
 </html>

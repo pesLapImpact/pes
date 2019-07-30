@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.pes.master.SkillEnum;
+import com.pes.service.MainMenuService;
+import com.pes.service.MemberRankingService;
 import com.pes.service.NewsService;
 import com.pes.service.TechService;
 
@@ -13,13 +15,17 @@ import com.pes.service.TechService;
 public class MainController {
 
 	@Autowired
+	private MainMenuService mainMenuService;
+	@Autowired
     private TechService techService;
 	@Autowired
     private NewsService newsService;
+	@Autowired
+    private MemberRankingService memberRankingService;
 
     @GetMapping("/main")
     public String main(Model model) {
-        model.addAttribute("tech_list", techService.findAll());
+        model.addAttribute("main_menu_list", mainMenuService.findAll());
         return "main";
     }
     
@@ -33,6 +39,12 @@ public class MainController {
     public String news(Model model) {
         model.addAttribute("news_list", newsService.findAll());
         return "/news/news_list";
+    }
+    
+    @GetMapping("/member_ranking")
+    public String memberRanking(Model model) {
+        model.addAttribute("member_ranking_list", memberRankingService.findAll());
+        return "/ranking/member";
     }
     
     @GetMapping("/portfolio")
