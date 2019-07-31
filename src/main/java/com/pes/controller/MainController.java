@@ -9,6 +9,7 @@ import com.pes.master.SkillEnum;
 import com.pes.service.MainMenuService;
 import com.pes.service.MemberRankingService;
 import com.pes.service.NewsService;
+import com.pes.service.TeamRankingService;
 import com.pes.service.TechService;
 
 @Controller
@@ -22,6 +23,8 @@ public class MainController {
     private NewsService newsService;
 	@Autowired
     private MemberRankingService memberRankingService;
+	@Autowired
+    private TeamRankingService teamRankingService;
 
     @GetMapping("/main")
     public String main(Model model) {
@@ -45,6 +48,12 @@ public class MainController {
     public String memberRanking(Model model) {
         model.addAttribute("member_ranking_list", memberRankingService.findAll());
         return "/ranking/member";
+    }
+    
+    @GetMapping("/team_ranking")
+    public String teamRanking(Model model) {
+        model.addAttribute("team_ranking_list", teamRankingService.findAll());
+        return "/ranking/team";
     }
     
     @GetMapping("/portfolio")

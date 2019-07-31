@@ -16,3 +16,11 @@
 	vertical-align:middle;
 	font-size: 15px;
 }
+
+
+.dropdown-menu {
+    background-color: rgb(252,220,10);
+    background-image: url(/img/background_img/overlay.svg),linear-gradient(45deg,rgb(252,220,10) 0%,rgb(252,220,10) 100%);
+    background-size: cover;
+    opacity: 0.9;	
+}

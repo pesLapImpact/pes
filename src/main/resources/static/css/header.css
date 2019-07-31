@@ -1,11 +1,30 @@
+.dropdown-menu {
+    background-color: rgb(252,220,10);
+    background-image: url(/img/background_img/overlay.svg),linear-gradient(45deg,rgb(252,220,10) 0%,rgb(252,220,10) 100%);
+    background-size: cover;
+}
+.dropdown-menu>li>a {
+    font-weight: 800;	
+}
+.dropdown-menu>li>a:hover {
+	background-color: rgb(0,129,242);
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: rgb(26,21,20);
+}
+.open>.dropdown-menu {
+    display: none;
+}
+
+
+
 #header {
     background-color: rgb(252,220,10);
     background-image: url(/img/background_img/overlay.svg),linear-gradient(45deg,rgb(252,220,10) 0%,rgb(252,220,10) 100%);
     background-size: cover;
-	padding-top: 1rem;
+	padding-top: 2rem;
 }
 #header_main {
-	padding-top:1%;
 	text-align: center;
 	vertical-align:middle;
 	font-size: 2rem;
@@ -16,5 +35,5 @@
 	font-size: 1rem;
 }
 #menu_panel {
-    padding-top: 2rem;
+	padding-top: 2rem;
 }

@@ -12,6 +12,7 @@ spring:
       , classpath:news_data-h2.sql
       , classpath:main_menu_data-h2.sql
       , classpath:member_ranking_data-h2.sql
+      , classpath:team_ranking_data-h2.sql
   jpa:
     show-sql: true
     hibernate:

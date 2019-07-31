@@ -2,23 +2,20 @@
   <div id="header_main"><strong>PES</strong> LAP IMPACT 2020</div>
 </a>
 <div id="header_sub"> Pro Evolution Soccer Korea Team Score Board</div>
-<div id="yellow_panel_start">
-  <div id="yellow_panel">
-    <div id="dummy_panel"></div>
-    <div id="team_panel">
-      <div class="panel_box"><a href="./team">team</a></div>
-    </div>
-    <div id="member_panel">
-      <div class="panel_box"><a href="./member">member</a></div>
-    </div>
-  </div>
-</div>
 <div id="menu_panel">
   <ul class="nav nav-pills menu">
-    <li id="home"    role="presentation" class="li_header"><a href="./peslapimpact">HOME</a></li>
-    <li id="news"    role="presentation" class="li_header"><a href="./news"><div class="current_menu">NEWS</div></a></li>
-    <li id="ranking" role="presentation" class="li_header"><a href="./member_ranking">RANKING</a></li>
-    <li id="result"  role="presentation" class="li_header"><a href="./result">RESULT</a></li>
-    <li id="report"  role="presentation" class="li_header"><a href="./report">REPORT</a></li>
+    <li role="presentation" class="li_header"><a id="home_menu" href="./peslapimpact">HOME</a></li>
+    <li role="presentation" class="li_header"><a id="news_menu" href="./news">NEWS</a></li>
+    <li role="presentation" class="dropdown">
+      <a id="ranking_menu" class="dropdown-toggle header_menu" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        RANKING<span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="./member_ranking">MEMBER</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="./team_ranking">TEAM</a></li>
+      </ul>
+    </li>
+    <li role="presentation" class="li_header"><a id="result_menu" href="./result">RESULT</a></li>
+    <li irole="presentation" class="li_header"><a id="report_menu" href="./report">REPORT</a></li>
   </ul>
 </div>
