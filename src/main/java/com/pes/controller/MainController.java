@@ -41,7 +41,7 @@ public class MainController {
     @GetMapping("/news")
     public String news(Model model) {
         model.addAttribute("news_list", newsService.findAll());
-        return "/news/news_list";
+        return "/news/news";
     }
     
     @GetMapping("/member_ranking")
@@ -55,6 +55,19 @@ public class MainController {
         model.addAttribute("team_ranking_list", teamRankingService.findAll());
         return "/ranking/team";
     }
+    
+    @GetMapping("/member_result")
+    public String memberResult(Model model) {
+        model.addAttribute("member_ranking_list", memberRankingService.findAll());
+        return "/result/member/member";
+    }
+    
+    @GetMapping("/team_result")
+    public String teamResult(Model model) {
+        model.addAttribute("team_ranking_list", teamRankingService.findAll());
+        return "/result/team/team";
+    }    
+    
     
     @GetMapping("/portfolio")
     public String portfolio(Model model) {

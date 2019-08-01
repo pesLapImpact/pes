@@ -1,0 +1,41 @@
+.h2, h2 {
+    text-align: center;
+}
+.plate {
+	text-align: center;
+}
+.name {
+	width: 42%;
+    word-break: break-all;
+    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+.name {
+	width: 42%;
+    word-break: break-all;
+    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.score {
+	width: 5%;
+	font-size: 2rem;
+}
+.container-fluid {
+    padding-top: 1rem;
+}
+.showcase-text>a:link {
+	color: #337ab7;
+    text-decoration: none;
+}
+.showcase-text>a:visited {
+	color: #337ab7;
+    text-decoration: none;
+}
+.match {
+	margin: 20px 0 10px;
+}
+
+.showcase .showcase-img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
