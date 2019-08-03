@@ -34,137 +34,41 @@
 
   <!-- Image Showcases -->
   <section class="showcase">
-    <div class="container-fluid p-0">
-    
+    <div id="result_container" class="container-fluid p-0">
+      {{#each member_result_list}}
+      <input type="hidden" id="home_rating_{{@index}}" value={{home_rating}}>
+      <input type="hidden" id="home_name_{{@index}}"   value={{home_name}}>
+      <input type="hidden" id="home_score_{{@index}}"  value={{home_score}}>
+      <input type="hidden" id="away_rating_{{@index}}" value={{away_rating}}>
+      <input type="hidden" id="away_name_{{@index}}"   value={{away_name}}>
+      <input type="hidden" id="away_score_{{@index}}"  value={{away_score}}>
+      <input type="hidden" id="match_type_{{@index}}"  value={{match_type}}>
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/result/win_cup/1.jpg');"></div>
+        <div id="result_img_{{@index}}" class="col-lg-6 order-lg-2 text-white showcase-img");"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text center-block">
           <table style="width:100%;">
             <tbody>
               <tr>
-                <td class="plate name">LaP</td>
-                <td class="plate score">10</td>
+                <td class="plate name">{{home_name}}</td>
+                <td class="plate score">{{home_score}}</td>
                 <td class="plate score">:</td>
-                <td class="plate score">3</td>
-                <td class="plate name">NiKel</td>
+                <td class="plate score">{{away_score}}</td>
+                <td class="plate name">{{away_name}}</td>
               </tr>
               <tr>
-                <td class="plate team"><strong>BRAZIL</strong></td>
+                <td class="plate team"><strong>{{home_team}}</strong></td>
                 <td class="plate score"></td>
                 <td class="plate score"></td>
                 <td class="plate score"></td>
-                <td class="plate team"><strong>GERMANY</strong></td>
+                <td class="plate team"><strong>{{away_team}}</strong></td>
               </tr>
             </tbody>
           </table>
-          <p class="match">2019년 8월 1일 소림사컵 준결승 경기</p>
-          <a href="#">#이 경기의 레포트 보기 <span class="badge"> 155개의 응원메시지가 있습니다.</span></a>
+          <p class="match">{{date}} <a href="/match/{{match_info_id}}">#{{match_info}}</a> {{match_type}}</p>
+          <a href="/report/{{id}}">#이 경기의 레포트 보기 <span class="badge"> {{comment_count}}개의 응원메시지가 있습니다.</span></a>
         </div>
       </div>
-    
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/result/draw/1.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text center-block">
-          <table style="width:100%;">
-            <tbody>
-              <tr>
-                <td class="plate name">GoM</td>
-                <td class="plate score">2</td>
-                <td class="plate score">:</td>
-                <td class="plate score">3</td>
-                <td class="plate name">Tzar</td>
-              </tr>
-              <tr>
-                <td class="plate team"><strong>BRAZIL</strong></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate team"><strong>GERMANY</strong></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="match">2019년 8월 1일 소림사컵 16강 경기</p>
-          <a href="#">#이 경기의 레포트 보기  <span class="badge"> 77개의 응원메시지가 있습니다.</span></a>
-        </div>
-      </div>
-  
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/result/win_rival/1.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text center-block">
-          <table style="width:100%;">
-            <tbody>
-              <tr>
-                <td class="plate name">LaP</td>
-                <td class="plate score">10</td>
-                <td class="plate score">:</td>
-                <td class="plate score">3</td>
-                <td class="plate name">NiKel</td>
-              </tr>
-              <tr>
-                <td class="plate team"><strong>BRAZIL</strong></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate team"><strong>GERMANY</strong></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="match">2019년 8월 1일 소림사컵 결승 경기</p>
-          <a href="#">#이 경기의 레포트 보기  <span class="badge"> 101개의 응원메시지가 있습니다.</span></a>
-        </div>
-      </div>
-      
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/result/win_weak/1.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <table style="width:100%;">
-            <tbody>
-              <tr>
-                <td class="plate name">aKbaRi</td>
-                <td class="plate score">4</td>
-                <td class="plate score">:</td>
-                <td class="plate score">2</td>
-                <td class="plate name">Lottoo</td>
-              </tr>
-              <tr>
-                <td class="plate team"><strong>BRAZIL</strong></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate team"><strong>GERMANY</strong></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="match">2019년 8월 1일 소림사컵 4강 경기</p>
-          <a href="#">#이 경기의 레포트 보기  <span class="badge"> 210개의 응원메시지가 있습니다.</span></a>
-        </div>
-      </div>
-      
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/result/win_strong/1.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text center-block">
-          <table style="width:100%;">
-            <tbody>
-              <tr>
-                <td class="plate name">XiviX</td>
-                <td class="plate score">4</td>
-                <td class="plate score">:</td>
-                <td class="plate score">2</td>
-                <td class="plate name">Lap</td>
-              </tr>
-              <tr>
-                <td class="plate team"><strong>BRAZIL</strong></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate score"></td>
-                <td class="plate team"><strong>GERMANY</strong></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="match">2019년 8월 1일 소림사컵 8강 경기</p>
-          <a href="#">#이 경기의 레포트 보기  <span class="badge"> 187개의 응원메시지가 있습니다.</span></a>
-        </div>
-      </div>
+      {{/each}}
     </div>
   </section>
   <div id="footer"></div>
@@ -175,6 +79,7 @@
 
   <!--add custom js -->
   <script src="/js/app/common.js"></script>
+  <script src="/js/app/member_result.js"></script>
 
 </body>
 

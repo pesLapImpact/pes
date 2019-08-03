@@ -1,6 +1,6 @@
 package com.pes.dto;
 
-import com.pes.entity.TeamRanking;
+import com.pes.entity.TeamRankings;
 
 public class TeamRankingResponseDto {
 	
@@ -34,7 +34,7 @@ public class TeamRankingResponseDto {
 		return lose;
 	}
 
-	public TeamRankingResponseDto(TeamRanking entity) {
+	public TeamRankingResponseDto(TeamRankings entity) {
         id      = entity.getId();
         name    = entity.getName();
         ranking = entity.getRanking();
