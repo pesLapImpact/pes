@@ -29,43 +29,43 @@ public class PostsRepositoryTest {
         postsRepository.deleteAll();
     }
 
-    @Test
-    public void load() {
-        //given
-    	Posts Posts = new Posts(
-  			  "1"
-  			, "2"
-  			, "jojoldu@gmail.com"
-  			);
-        
-        postsRepository.save(Posts);
-
-        //when
-        List<Posts> PostsList = postsRepository.findAll();
-
-        //then
-        Posts post = PostsList.get(0);
-        assertThat(post.getTitle(), is("1"));
-        assertThat(post.getContent(), is("2"));
-    }
-    
-    @Test
-    public void BaseTimeEntity_registration () {
-        //given
-        LocalDateTime now = LocalDateTime.now();
-    	Posts Posts = new Posts(
-    			  "1"
-    			, "2"
-    			, "jojoldu@gmail.com"
-    			);
-        postsRepository.save(Posts);
-        
-        //when
-        List<Posts> PostsList = postsRepository.findAll();
-
-        //then
-        Posts post = PostsList.get(0);
-        assertTrue(post.getCreatedDate().isAfter(now));
-        assertTrue(post.getModifiedDate().isAfter(now));
-    }
+//    @Test
+//    public void load() {
+//        //given
+//    	Posts Posts = new Posts(
+//  			  "1"
+//  			, "2"
+//  			, "jojoldu@gmail.com"
+//  			);
+//        
+//        postsRepository.save(Posts);
+//
+//        //when
+//        List<Posts> PostsList = postsRepository.findAll();
+//
+//        //then
+//        Posts post = PostsList.get(0);
+//        assertThat(post.getTitle(), is("1"));
+//        assertThat(post.getContent(), is("2"));
+//    }
+//    
+//    @Test
+//    public void BaseTimeEntity_registration () {
+//        //given
+//        LocalDateTime now = LocalDateTime.now();
+//    	Posts Posts = new Posts(
+//    			  "1"
+//    			, "2"
+//    			, "jojoldu@gmail.com"
+//    			);
+//        postsRepository.save(Posts);
+//        
+//        //when
+//        List<Posts> PostsList = postsRepository.findAll();
+//
+//        //then
+//        Posts post = PostsList.get(0);
+//        assertTrue(post.getCreatedDate().isAfter(now));
+//        assertTrue(post.getModifiedDate().isAfter(now));
+//    }
 }

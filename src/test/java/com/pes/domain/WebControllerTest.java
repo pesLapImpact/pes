@@ -17,12 +17,12 @@ public class WebControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
-    public void loadMainPage() {
-        //when
-        String body = this.restTemplate.getForObject("/", String.class);
-
-        //then
-        assertThat(body).contains("Welcome PES2019 LapImpact");
-    }
+//    @Test
+//    public void loadMainPage() {
+//        //when
+//        String body = this.restTemplate.getForObject("/", String.class);
+//
+//        //then
+//        assertThat(body).contains("Welcome PES2019 LapImpact");
+//    }
 }
