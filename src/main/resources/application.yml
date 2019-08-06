@@ -16,6 +16,7 @@ spring:
       , classpath:member_results_data-h2.sql
       , classpath:comments_data-h2.sql
       , classpath:members_data-h2.sql
+      , classpath:cup_data-h2.sql
   jpa:
     show-sql: true
     hibernate:

@@ -1,0 +1,80 @@
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.h2, h2 {
+    text-align: center;
+}
+.plate {
+	text-align: center;
+}
+.name {
+	width: 42%;
+    word-break: break-all;
+    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+.name {
+	width: 42%;
+    word-break: break-all;
+    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.score {
+	width: 5%;
+	font-size: 2rem;
+}
+.container-fluid {
+    padding-top: 1rem;
+}
+.showcase-text>a:link {
+	color: #337ab7;
+    text-decoration: none;
+}
+.showcase-text>p>a:link{
+	color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+}
+.showcase-text>a:visited {
+	color: #337ab7;
+    text-decoration: none;
+}
+.showcase-text>p>a:visited {
+	color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+}
+.match {
+	margin: 20px 0 10px;
+}
+.banner{
+	width: 100%;
+	height: 20rem;
+	display: block; 
+	margin: 0px auto;
+}
+.showcase .showcase-img {
+    min-height: 20rem;
+    background-size: cover;
+}
+
+@media (min-width: 1000px)
+.col-lg-6 {
+    width: 50%;
+    float: left;
+}
+@media (min-width: 1000px)
+.banner {
+    height: 15rem;
+}
+
+@media (min-width: 1000px)
+.showcase .showcase-img {
+    min-height: 20rem;
+    background-size: cover;
+}
+
+
+

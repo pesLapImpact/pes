@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.pes.master.SkillEnum;
+import com.pes.service.CupService;
 import com.pes.service.MainMenuService;
 import com.pes.service.MemberRankingsService;
 import com.pes.service.MemberResultsService;
@@ -31,6 +32,8 @@ public class MainController {
     private MemberResultsService memberResultsService;
 	@Autowired
     private TeamResultsService teamResultsService;
+	@Autowired
+    private CupService cupService;
 	
     @GetMapping("/main")
     public String main(Model model) {
@@ -73,8 +76,25 @@ public class MainController {
         model.addAttribute("team_ranking_list", teamResultsService.findAll());
         return "/result/team/team";
     }    
+
+    @GetMapping("/cup")
+    public String cup(Model model) {
+        model.addAttribute("cup_list", cupService.findAll());
+        return "/peslapimpact/cup/cup";
+    }        
     
     
+    
+    
+    
+    
+    
+    
+    @GetMapping("/wedding")
+    public String wedding(Model model) {
+        model.addAttribute("team_ranking_list", teamResultsService.findAll());
+        return "wedding";
+    }        
     
     
     
