@@ -65,16 +65,6 @@ hr {
     width: 50%;
     float: left;
 }
-@media (min-width: 1000px)
-.banner {
-    height: 15rem;
-}
-
-@media (min-width: 1000px)
-.showcase .showcase-img {
-    min-height: 20rem;
-    background-size: cover;
-}
 
 
 
