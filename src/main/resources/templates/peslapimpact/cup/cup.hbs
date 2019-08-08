@@ -35,14 +35,15 @@
   <!-- Image Showcases -->
   <section class="showcase">
     <div id="result_container" class="container-fluid p-0">
+      <span class="banner_info">#배너이미지를 클릭하시면 대회 상세 정보를 볼 수 있습니다.</span> 
       {{#each cup_list}}
       <div class="row no-gutters">
         <div id="cup_img_{{@index}}" class="col-lg-6 order-lg-2 text-white showcase-img");">
-          <img class="banner" src="/img/cup/{{img}}" alt="pes">
+          <a href="/cup/{{id}}"><img class="banner" src="/img/cup/{{img}}" alt="pes"></a>
         </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text center-block">
-          <p class="match"><a href="/cup/{{id}}">#{{name}}</a> 인원: {{participants}}, 등급: {{grade}}, 대회 기간 {{date_from}} ~ {{date_to}}</p>
-          <a href="/cup/{{id}}">#이 대회의 상세 보기 <span class="badge"> {{comment_count}}개의 응원메시지가 있습니다.</span></a>
+          <p class="match"><a href="/cup/{{id}}">#{{name}}</a> 대회 등급: {{grade}}, 참가 인원: {{participants}} <span class="badge"> {{comment_count}}개의 응원메시지가 있습니다.</span></p>
+          <p>대회 기간: {{date_from}} ~ {{date_to}}</p>
         </div>
       </div>
       <hr>

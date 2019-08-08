@@ -87,6 +87,7 @@ a:hover   { color: black; text-decoration: none;}
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	font-size: 12px;
 	padding: 3px;
+	text-align: center;
 }
 
 .thumbnail .caption {
@@ -104,6 +105,11 @@ a:hover   { color: black; text-decoration: none;}
     padding-right: 0px;
     padding-left: 0px;	
 }
+.banner_info{
+	color: #337ab7;
+	font-weight: bold;
+}
+
 
 
 

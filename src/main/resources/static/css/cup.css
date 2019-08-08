@@ -51,20 +51,29 @@ hr {
 }
 .banner{
 	width: 100%;
-	height: 20rem;
+	height: 10rem;
 	display: block; 
 	margin: 0px auto;
 }
 .showcase .showcase-img {
-    min-height: 20rem;
-    background-size: cover;
+    min-height: 10rem;
 }
 
-@media (min-width: 1000px)
-.col-lg-6 {
-    width: 50%;
-    float: left;
+@media (min-width: 500px){
+.banner
+, .showcase .showcase-img {
+    height: 15rem;
 }
 
+@media (min-width: 768px){
+.banner
+, .showcase .showcase-img {
+    height: 20rem;
+}
 
+@media (min-width: 768px){
+    .showcase .showcase-text {
+        padding: 1rem;
+    }
+}
 

@@ -19,9 +19,6 @@ hr {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.table>tbody>tr>td>td_news_title {
-    font-size: 2rem;	
-}
 .td_news_title {
     font-size: 2rem;
 }
@@ -29,6 +26,11 @@ hr {
     font-size: 1rem;
     margin: 0px;
 }
+.table>tbody>tr>.td_news {
+	text-align: left;
+}
+
+
 
 #news_content {
 	padding-left: 5px;

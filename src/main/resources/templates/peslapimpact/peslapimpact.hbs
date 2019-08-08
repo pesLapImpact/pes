@@ -7,10 +7,10 @@
 
   <!-- add css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css//common.css">
-  <link rel="stylesheet" href="/css//peslapimpact.css">
-  <link rel="stylesheet" href="/css//header.css">
-  <link rel="stylesheet" href="/css//footer.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/peslapimpact.css">
   
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@
           <table class="table table-striped">
             {{#each news_list}}
               <tr>
-                <td><span class="td_news_title">{{news_title}}</span> <p class="post-meta td_news_post">Posted by {{author}} on {{date}} </p></td>
+                <td class="td_news"><span class="td_news_title">{{news_title}}</span> <p class="post-meta td_news_post">Posted by {{author}} on {{date}} </p></td>
               </tr>
             {{/each}}
           </table>        

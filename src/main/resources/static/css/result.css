@@ -49,3 +49,21 @@ hr {
 .match {
 	margin: 20px 0 10px;
 }
+.showcase .showcase-img {
+    min-height: 30rem;
+}
+@media (min-width: 768px){
+	.showcase .showcase-text {
+	    padding: 1rem;
+	}
+}
+@media (min-width: 300px){
+.banner
+, .showcase .showcase-img {
+    min-height: 20rem;
+}
+@media (min-width: 500px){
+.banner
+, .showcase .showcase-img {
+    min-height: 25rem;
+}
