@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PES Lap Impact 2020</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- add css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css//common.css">
+  <link rel="stylesheet" href="/css//header.css">
+  <link rel="stylesheet" href="/css//footer.css">
+  <link rel="stylesheet" href="/css//detail.css">
+  
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+  <div id="header"></div>
+  <div id="main_content">
+    {{#each detail_list}}
+    <div id="data_panel">
+      <div id="report_header" class="col-md-12">
+        {{win_name}} v {{lose_name}} 매치 <strong>{{is_special_report}}</strong> 리포트
+      </div>
+      <div id="data_header" class="col-md-12">
+        <strong>
+          ‘신의 아들들’ 아약스, ‘날개 잃은’ 레알에 4-1 대승... UCL 8강 진출
+          ‘{{home_name}}’ {{home_team}}, ‘{{away_name}}’ {{away_team}}에 {{home_score}}-{{away_score}} {{match_result}}... {{next_match}} 진출
+        </strong>
+      </div>
+      <div id="reporter" class="col-md-12">{{reporter}}</div>
+      <hr>
+      <div id="match_date" class="col-md-12">{{match_date}}</div>
+      <div id="data_content" class="col-md-12">
+        <div id="youtube_panel">
+          <!-- 16:9 aspect ratio -->
+          <div id="youtube_content" class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src={{youtube_src}}></iframe>
+          </div>
+        </div>
+        <div id="detail_panel">
+          <div id="detail_header">
+            ‘{{win_nick}}’ {{win_name}}, ‘{{lose_nick}}’ {{lose_name}}에 {{win_score}}-{{lose_score}} {{match_result}}... {{next_match}} 진출
+            ‘신의 아들들’ 아약스, ‘날개 잃은’ 레알에 4-1 대승... UCL 8강 진출
+          </div>
+          <div id="detail_content">
+            [라프임팩트] 오현진 기자 = 패기와 열정의 ‘신의 아들들’ 아약스, 날개 잃은 ‘디펜딩 챔피언’ 레알 마드리드 꺾고 UCL 8강 진출 성공.
+            AFC 아약스가 6일(한국시간) 스페인 마드리드에 위치한 산티아고 베르나베우에서 열린 레알 마드리드와의 2018/19시즌 UEFA 챔피언스리그 16강 2차전에서 4-1로 승리하며 1, 2차전 합계 5-3으로 8강 진출에 성공했다.
+            UCL 3연패, ‘디펜딩 챔피언’의 전통 강호 레알 마드리드를 무너뜨린 ‘신의 아들들’ 아약스의 기세가 어디까지 이어질지 앞으로 귀추가 주목된다. 
+
+            [{{source_site}}] {{reporter}} 
+                      패기와 열정의 ‘{{win_nick}}’ {{win_team}}, ‘{{lose_nick}}’ {{win_name}} 꺾고 {{next_match}} 진출 성공.
+            {{win_rating}}인 {{win_name}}와/과 {{lose_rating}}인 {{lose_name}}의 대결로 주목을 모았던 경기로 
+                      상대 전적 {{relative_record}}(으)로  레이팅 {{relative_rating}} 차에도 불구하고 {{win_name}}이 승리를 가져가며 
+            {{win_name}}이/가 {{match_date}} {{cup_info}}에서 {{lose_name}}과/와의 {{match_info}}에서 {{win_score}}-{{lose_score}}로 승리하며 {{next_match}} 진출에 성공했다.
+            {{lose_carreer}}, {{lose_nick}}의 전통 강호 {{lose_name}}을/를 무너뜨린 ‘{{win_nick}}’ {{win_name}}의 기세가 어디까지 이어질지 앞으로 귀추가 주목된다.                   
+        </div>
+        <div id="commnent_content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">{{win_name}} 임팩트!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="응원 메시지를 남겨주세요~">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">{{win_name}} 임팩트!</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <div id="comment_list">
+            {{#each comment_list}}
+            <div id="comment_list">{{support_name}}/{{comment}}</div>
+            <hr>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
+    </div>
+    {{/each}}
+  </div>
+  <div id="footer"></div>
+  
+  <!-- add js, jquery lib -->
+  <script src="/js/lib/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!--add custom js -->
+  <script src="/js/app/common.js"></script>
+  <!-- Custom scripts for this template -->
+  
+</body>
+</html>

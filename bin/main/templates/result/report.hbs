@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PES Lap Impact 2020</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- add css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="header"></div>
+  <div id="main_content">
+    {{#each reports_list}}
+    <div id="data_panel">
+      <div id="report_title" class="col-md-12">
+        {{report_title}}
+      </div>
+      <div id="report_header" class="col-md-12">
+        <strong>
+          {{report_header}}
+        </strong>
+      </div>
+      <div id="content" class="col-md-12">
+        <div id="youtube_panel">
+          <!-- 16:9 aspect ratio -->
+          <div id="youtube_content" class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src={{youtube_src}}></iframe>
+          </div>
+        </div>
+        <div id="report_panel">
+          <div id="report_content">
+            {{reporter}}<br>
+            {{report_content}}
+        </div>
+        <div id="commnent_content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">{{home_name}} Impact!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="응원 메시지를 남겨주세요~">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">{{away_name}} Impact!</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <div id="comment_list">
+            {{#each comment_list}}
+            <div id="comment_list">{{support_name}}/{{comment}}</div>
+            <hr>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
+    </div>
+    {{/each}}
+  </div>
+  <div id="footer"></div>
+  
+  <!-- add js, jquery lib -->
+  <script src="/js/lib/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!--add custom js -->
+  <script src="/js/app/common.js"></script>
+  <!-- Custom scripts for this template -->
+  
+</body>
+</html>

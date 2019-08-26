@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pes.master.SkillEnum;
 import com.pes.service.CupService;
@@ -11,6 +13,7 @@ import com.pes.service.MainMenuService;
 import com.pes.service.MemberRankingsService;
 import com.pes.service.MemberResultsService;
 import com.pes.service.NewsService;
+import com.pes.service.ReportsService;
 import com.pes.service.TeamRankingsService;
 import com.pes.service.TeamResultsService;
 import com.pes.service.TechService;
@@ -34,6 +37,15 @@ public class MainController {
     private TeamResultsService teamResultsService;
 	@Autowired
     private CupService cupService;
+	@Autowired
+    private ReportsService reportsService;
+	
+	@RequestMapping("/report/{id}")
+	public String report(Model model, @PathVariable Long id) {
+        model.addAttribute("reports_list", reportsService.findReportById(id));
+        
+        return "/result/report";
+    }
 	
     @GetMapping("/main")
     public String main(Model model) {

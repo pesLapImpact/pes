@@ -17,6 +17,7 @@ spring:
       , classpath:comments_data-h2.sql
       , classpath:members_data-h2.sql
       , classpath:cup_data-h2.sql
+      , classpath:reports_data-h2.sql
   jpa:
     show-sql: true
     hibernate:
@@ -24,3 +25,6 @@ spring:
   h2:
     console:
       enabled: true
+  security:
+    headers:
+      frame: false
