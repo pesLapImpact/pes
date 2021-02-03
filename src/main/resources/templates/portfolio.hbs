@@ -1,70 +1,1004 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>메인</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jinny`s portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/img/portfolio/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/portfolio.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Jinny`s portfolio</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="/img/portfolio/ohhj.jpg" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Hyeonjin Oh</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Software Engineer</p>
+            </div>
+        </header>
+        <!-- Skills Section-->
+        <section class="page-section portfolio" id="skills">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Server Skills</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/java.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/php.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/cshop.png" alt="" />
+                    </div>
 
-  <!-- add css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css//common.css">
-  
-</head>
-<body>
-  <div id="header"></div>
-  <div id="content">
-    <div id="data_panel"> 
-      <div id="data_header" class="col-md-12">
-        <h2>#Skills</h2>
-      </div>
-      <div id="data_content" class="col-md-12">
-        <div class="logo_container">
-          <h2>Languages</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-        <div class="logo_container">
-          <h2>Web Skills</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-        <div class="logo_container">
-          <h2>Framework</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-        <div class="logo_container">
-          <h2>DataBase</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-        <div class="logo_container">
-          <h2>Operating System</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-        <div class="logo_container">
-          <h2>Etc</h2>
-          {{#each tech_list}}
-            <div class="logo_box"><img src="/img/tech_logo/{{img_src}}" class="img-rounded logo_img"></div>
-          {{/each}}
-        </div>
-      </div>
-      <div id="data_footer" class="data_title"><strong>PES</strong> LAP IMPACT BOARD</div>
-    </div>
-  </div>
-  <div id="footer"></div>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Front Skills</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/angular.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/react.png" alt="" />
+                    </div>
+                </div>
 
-  <!-- add js, jquery lib -->
-  <script src="/js/lib/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">DB Skills</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/mysql.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/postgresql.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/oracle.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/mssql.png" alt="" />
+                    </div>
 
-  <!--add custom js -->
-  <script src="/js/app/news.js"></script>
-</body>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Source Management Skills</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/git.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <img class="img-fluid" src="/img/portfolio/svn.png" alt="" />
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【スマホウェブアプリ】2020.07 ~ 2020.09</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/01.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【在庫管理システム】2020.10 ~ 2020.12</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/02.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【外貨管理システム】2019.04 ~ 2019.12</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/03.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【年金管理システム】2018.04 ~ 2019.02</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/04.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【ニュースページ】2017.09 ~ 2018.02</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/05.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【モバイルゲーム】2016.06 ~ 2017.08</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/06.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【在庫管理開発】2015.10 ~ 2016.05</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/07.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【顧客ウェブサイト】2014.07 ~ 2015.09</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/08.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 9-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【メーリングシステム】2014.04 ~ 2015.06</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/09.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 10-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal10">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【顧客応対システム】2013.11 ~ 2014.02</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/10.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 11-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal11">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【スマートフォン】2012.05 ~ 2013.10</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/11.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 12-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal12">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">【オンラインゲーム】2002.12 ~ 2005.05</div>
+                            </div>
+                            <img class="img-fluid" src="/img/portfolio/12.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 mr-auto"><p class="lead">"挑戦することを恐れません。"</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">自転車旅行で一日200キロを走ったことがあります。周りの人は、なぜわざわざそんな大変なことに挑戦するのか、理解できないと言われました。しかしその後、ソウルから釜山までの自転車旅行に挑戦で私にはもう200という数字は、もはや拒否感を与える数値ではありませんでした。こういう心得として決して容易な道のみを選んで来ませんでした。 会社生活を経て、自分の力で大学に卒業し、日本の広島市立大学の交換留学やワーキングホリデーで一人で生きていく生活をして参りました。この経験は、私が再び業務を担当するとき、抵抗感をなくし、より楽しく、より楽にその仕事に取り組むことができようにする役割をしてくれると信じています。</p></div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">SI関連WEBサービス系、クライアントサーバ系システム開発を約9年間、日本と韓国で経験し、要件定義～テストまでの上流工程から下流工程までの経験があります。主にJava言語使用の企業案件を担当しました。</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <label>E-MAIL: wildhyeonjin@gmail.com</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/hyeonjin.oh"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCyMQt90haKscO65sdB1DIzg"><i class="fab fa-fw fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/wwildd0g/?hl=ja"><i class="fab fa-fw fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Lap Impact</small></div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="text-secondary text-uppercase mb-0" id="portfolioModal1Label">スマホウェブアプリ</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/01.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・チャットボットシステム</br>
+                                        ・グラフライブラリのカスタマイズ</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10</br>
+                                        【DB】</br>
+                                        MySQL</br>
+                                        【言語】</br>
+                                        Java, Angular, HTML, JavaScript, Spring Boot</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        7人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="text-secondary text-uppercase mb-0" id="portfolioModal2Label">在庫管理システム</h5>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/02.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・帳票システムの設計、実装、導入</br>
+                                        ・在庫管理システムのメンテナンス</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10</br>
+                                        【DB】</br>
+                                        Postgresql</br>
+                                        【言語】</br>
+                                        Java, Angular, HTML, JavaScript, Spring Boot</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        7人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">【外貨管理】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/03.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・外貨、資金繰の顧客を担当。</br>
+                                        ・帳票システムの設計・実装・導入。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10, Linux</br>
+                                        【DB】</br>
+                                        MSSQL</br>
+                                        【言語】</br>
+                                        Java, JSP, HTML, JavaScript, J2EE</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        7人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">【年金管理】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/03.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・第三者による年金申請、照会システムの顧客を担当</br>
+                                        ・年金管理システムの設計・実装・導入・メンテナンス。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10, Linux</br>
+                                        【DB】</br>
+                                        MYSQL</br>
+                                        【言語】</br>
+                                        Java, HTML, JavaScript, Spring</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        5人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">【ニュースページ】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/04.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・ニュースページの設計・実装・導入・メンテナンス。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10, Linux</br>
+                                        【DB】</br>
+                                        MSSQL</br>
+                                        【言語】</br>
+                                        PHP, HTML, JavaScript, JQuery, Laravel, Shell Script</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        7人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">【モバイルゲーム】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/05.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・サーバ側の管理および開発を担当。</br>
+                                        ・プロント側の要求事項より設計分析を行い、解決案を設計・提案。</br>
+                                        ・サーバ運用および計画</br>
+                                        ・プロントリクエストによるレスポンスの仕様の設計・実装・導入・メンテナンス。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows10, Linux</br>
+                                        【DB】</br>
+                                        MSSQL</br>
+                                        【言語】</br>
+                                        Java, PHP, HTML, JavaScript, JQuery, Spring Boot</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        10人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【在庫管理】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/07.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・開発ならびにプロジェクト管理を担当</br>
+                                        ・顧客の要求事項より設計分析を行い、解決案を設計・提案</br>
+                                        ・在庫管理の顧客を担当</br>
+                                        ・在庫管理システムの要件定義・設計・実装・導入・メンテナンス</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        要件定義</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        結合テスト</br>
+                                        日程管理</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows, Linux</br>
+                                        【DB】</br>
+                                        MSSQL</br>
+                                        【言語】</br>
+                                        C#, HTML, JavaScript, ASP.NET</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        8人/PG, リーダ－
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【顧客ウェブサイト】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/08.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・手数料改定システムの設計・実装・導入・メンテナンス。
+                                        ・ATM電文連動システムの設計・実装・導入・メンテナンス。
+                                        ・NISA対応システムの設計・実装・導入・メンテナンス。
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        基本設計</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        結合テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows, Windows Server</br>
+                                        【DB】</br>
+                                        Oracle 11g</br>
+                                        【言語】</br>
+                                        Java, C, ProC, HTML, JavaScript, JQuery</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        20人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【メーリング】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/09.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・メーリングシステムの設計・実装・導入・メンテナンス。</br>
+                                        ・外部システムと連動システムの設計・実装・導入・メンテナンス。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows</br>
+                                        【DB】</br>
+                                        MSSQL</br>
+                                        【言語】</br>
+                                        Java, HTML, JavaScript</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        10人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 10-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【顧客応対】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/10.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・コールセンター交換システムの設計・実装・導入・メンテナンス。</br>
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows</br>
+                                        【DB】</br>
+                                        Oracle10g</br>
+                                        【言語】</br>
+                                        Java, HTML, JavaScript, Struts</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        15人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 11-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【Androidスマートフォン】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/11.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・Firmware開発を担当。
+                                        ・自社開発向けのAndroid OSのカスタマイズを担当
+                                        ・自社開発向けのAndroidアプリケーション設計・実装・導入・メンテナンス。
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Windows</br>
+                                        【DB】</br>
+                                        SQLite</br>
+                                        【言語】</br>
+                                        Java, C, C++, HTML, JavaScript, Android, Jni, Shell Script</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        16人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 12-->
+        <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">【オンラインゲーム】</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/img/portfolio/12.png" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        ■　プロジェクト内容</br>
+                                        ・メインページの設計・実装・導入・メンテナンス。
+                                        ・イベントページの設計・実装・導入・メンテナンス。
+                                        ・広告記事を作成
+                                        ・ガイドブック作成
+                                        ・コンディション管理システムを企画
+                                        </br>
+                                        ■　担当フェーズ</br>
+                                        詳細設計</br>
+                                        プログラミング</br>
+                                        単体テスト</br>
+                                        </br>
+                                        ■　開発環境</br>
+                                        【OS】</br>
+                                        Linux</br>
+                                        【DB】</br>
+                                        MySQL</br>
+                                        【言語】</br>
+                                        PHP, HTML, JavaScript</br>
+                                        </br>
+                                        ■メンバー/役割</br>
+                                        6人/PG
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/portfolio.js"></script>
+    </body>
 </html>
